@@ -1,9 +1,30 @@
 = keigo
 
-Description goes here.
+keigo translates Japanese to polite expressions.
+
+== DESCRIPTION
+
+keigo translates Japanese into polite expressions.
+
+== INSTALL
+
+  gem install keigo
+
+== USAGE
+
+  require 'keigo'
+
+  Keigo.new.sama 'Alice'
+  # => 'Alice様'
+
+  Keigo.new.k '今日こいつが来る。'
+  # => '本日こちらさまがおいでになる。'
+
+  k 'あいつが今日から本を読む。'
+  # => 'あちらさまが本日から本をお読みになる。'
 
 == Contributing to keigo
- 
+
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
 * Fork the project
@@ -14,6 +35,5 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2011 kano4. See LICENSE.txt for
-further details.
+Copyright (c) 2011 kano4. See LICENSE.txt for further details.
 
