@@ -3,22 +3,21 @@ def sama name
   Keigo.new.sama name
 end
 
+def k subject
+  Keigo.new.k subject
+end
+
 class Keigo
-  @@app_id = nil
-
-  def initialize
-    raise RuntimeError unless Keigo.app_id
-  end
-
-  def self.app_id
-    @@app_id
-  end
-
-  def self.app_id= app_id
-    @@app_id = app_id
-  end
-
   def sama name
     "#{name}様"
+  end
+
+  def k subject
+    keigo_henkan = {'わたし' => 'わたくし', 'わたしたち' => 'わたくしども', '今日' => '本日'}
+    if keigo_henkan.key?(subject)
+      keigo_henkan[subject]
+    else
+      subject
+    end
   end
 end
