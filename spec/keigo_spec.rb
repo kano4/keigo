@@ -1,5 +1,7 @@
 # encoding: utf-8
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
+require 'yaml'
+$keigo_henkan = YAML.load_file(File.dirname(__FILE__) + '/../keigo.yml')
 
 describe 'Keigo' do
   before(:each) do
@@ -14,14 +16,20 @@ describe 'Keigo' do
     sama('Keigo').should be_eql 'Keigo様'
   end
 
-  it { @keigo.k('こんにちわ').should be_eql 'こんにちわ' }
-  it { @keigo.k('わたくし').should be_eql 'わたくし' }
+  context 'は、変換後に登録されていない場合' do
+    it { k('こんにちわ').should be_eql 'こんにちわ' }
+    it { k('わたくし').should be_eql 'わたくし' }
+  end
 
-  it { @keigo.k('わたしたち').should be_eql 'わたくしども' }
-  it { @keigo.k('わたし').should be_eql 'わたくし' }
-  it { @keigo.k('今日').should be_eql '本日' }
+  context 'は、変換語に登録されている場合' do
+    @keigo_henkan = $keigo_henkan
 
-  it { @keigo.k('わたしは今日は外出いたします。').should be_eql 'わたくしは本日は外出いたします。' }
+    @keigo_henkan.each do |key, keigo|
+      it { k(key).should be_eql keigo }
+    end
 
-  it { k('わたし').should be_eql 'わたくし' }
+    it { k('あいつが今日来る。').should be_eql 'あちらさまが本日おいでになる。' }
+
+    it { @keigo.k('わたし').should be_eql 'わたくし' }
+  end
 end

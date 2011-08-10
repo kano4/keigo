@@ -1,0 +1,5 @@
+Autotest.add_hook :initialize do |at|
+  at.add_mapping(/keigo.yml/, true) do |f, m|
+    Dir.glob 'spec/**/*.rb'
+  end
+end
