@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "keigo"
   gem.homepage = "http://github.com/kano4/keigo"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{polite expression}
+  gem.description = %Q{This is a polite expression gem.}
   gem.email = "shinji@kano4.com"
   gem.authors = ["kano4"]
   # dependencies defined in Gemfile
