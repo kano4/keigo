@@ -1,6 +1,6 @@
 # encoding: utf-8
-class Object
+class Keigo
   def sama(name)
-    puts "#{name}様"
+    "#{name}様"
   end
 end
