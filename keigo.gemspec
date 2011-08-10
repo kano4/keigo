@@ -20,10 +20,12 @@ Gem::Specification.new do |s|
     ".document",
     ".rspec",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "keigo.gemspec",
     "lib/keigo.rb",
     "spec/keigo_spec.rb",
     "spec/spec_helper.rb"
