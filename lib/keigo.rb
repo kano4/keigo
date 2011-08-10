@@ -3,8 +3,8 @@ def sama name
   Keigo.new.sama name
 end
 
-def k subject
-  Keigo.new.k subject
+def k text
+  Keigo.new.k text
 end
 
 class Keigo
@@ -12,12 +12,9 @@ class Keigo
     "#{name}様"
   end
 
-  def k subject
-    keigo_henkan = {'わたし' => 'わたくし', 'わたしたち' => 'わたくしども', '今日' => '本日'}
-    if keigo_henkan.key?(subject)
-      keigo_henkan[subject]
-    else
-      subject
-    end
+  def k text
+    keigo_henkan = {'わたしたち' => 'わたくしども', 'わたし' => 'わたくし', '今日' => '本日'}
+    keigo_henkan.each_key {|key| text = text.sub(key, keigo_henkan[key])}
+    text
   end
 end
