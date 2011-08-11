@@ -1,9 +1,5 @@
 = keigo
 
-keigo translates Japanese to polite expressions.
-
-== DESCRIPTION
-
 keigo translates Japanese into polite expressions.
 
 == INSTALL
