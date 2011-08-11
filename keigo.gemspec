@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{keigo}
-  s.version = "0.0.2"
+  s.version = "0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{kano4}]
-  s.date = %q{2011-08-10}
+  s.date = %q{2011-08-11}
   s.description = %q{This is a polite expression gem.}
   s.email = %q{shinji@kano4.com}
   s.extra_rdoc_files = [
@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
     "README.rdoc"
   ]
   s.files = [
+    ".autotest",
     ".document",
     ".rspec",
     "Gemfile",
