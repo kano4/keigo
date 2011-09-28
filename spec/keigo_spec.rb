@@ -28,7 +28,7 @@ describe 'Keigo' do
       it { k(key).should be_eql keigo }
     end
 
-    it { k('あいつが今日来る。').should be_eql 'あちらさまが本日おいでになる。' }
+    it { k('あいつが今日来る。').should be_eql 'あちらさまが本日お見えになる。' }
 
     it { @keigo.k('わたし').should be_eql 'わたくし' }
   end
