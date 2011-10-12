@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{keigo}
-  s.version = "0.0.3"
+  s.name = "keigo"
+  s.version = "0.0.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = [%q{kano4}]
-  s.date = %q{2011-08-11}
-  s.description = %q{This is a polite expression gem.}
-  s.email = %q{shinji@kano4.com}
+  s.authors = ["kano4"]
+  s.date = "2011-10-12"
+  s.description = "This is a polite expression gem."
+  s.email = "shinji@kano4.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -32,11 +32,11 @@ Gem::Specification.new do |s|
     "spec/keigo_spec.rb",
     "spec/spec_helper.rb"
   ]
-  s.homepage = %q{http://github.com/kano4/keigo}
-  s.licenses = [%q{MIT}]
-  s.require_paths = [%q{lib}]
-  s.rubygems_version = %q{1.8.5}
-  s.summary = %q{polite expression}
+  s.homepage = "http://github.com/kano4/keigo"
+  s.licenses = ["MIT"]
+  s.require_paths = ["lib"]
+  s.rubygems_version = "1.8.10"
+  s.summary = "polite expression"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
