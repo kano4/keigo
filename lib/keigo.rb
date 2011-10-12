@@ -2,6 +2,14 @@
 require 'yaml'
 $keigo_henkan = YAML.load_file(File.dirname(__FILE__) + '/../keigo.yml')
 
+class String
+  def keigo
+    text = self
+    $keigo_henkan.each_key {|key| text = text.sub(key, $keigo_henkan[key])}
+    text
+  end
+end
+
 def sama name
   Keigo.new.sama name
 end
