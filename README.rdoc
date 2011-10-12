@@ -10,13 +10,13 @@ keigo translates Japanese into polite expressions.
 
   require 'keigo'
 
-  Keigo.new.sama 'Alice'
+  'Alice'.sama
   # => 'Alice様'
 
-  Keigo.new.k '今日こいつが来る。'
+  '今日こいつが来る。'.keigo
   # => '本日こちらさまがおいでになる。'
 
-  k 'あいつが今日から本を読む。'
+  'あいつが今日から本を読む。'.keigo
   # => 'あちらさまが本日から本をお読みになる。'
 
 == Contributing to keigo
