@@ -4,6 +4,8 @@ require 'yaml'
 $keigo_henkan = YAML.load_file(File.dirname(__FILE__) + '/../keigo.yml')
 
 describe String do
+  it { "Alice".sama.should be_eql 'Alice様' }
+
   context 'は、変換後に登録されていない場合' do
     it { 'こんにちわ'.keigo.should be_eql 'こんにちわ' }
     it { 'わたくし'.keigo.should be_eql 'わたくし' }
