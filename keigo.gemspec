@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "keigo"
-  s.version = "0.0.4"
+  s.version = "0.0.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["kano4"]
-  s.date = "2011-10-12"
+  s.date = "2011-10-28"
   s.description = "This is a polite expression gem."
   s.email = "shinji@kano4.com"
   s.extra_rdoc_files = [
@@ -42,22 +42,22 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<rspec>, ["~> 2.3.0"])
-      s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_development_dependency(%q<jeweler>, ["~> 1.6.4"])
+      s.add_development_dependency(%q<rspec>, [">= 2.3.0"])
+      s.add_development_dependency(%q<bundler>, [">= 1.0.0"])
+      s.add_development_dependency(%q<jeweler>, [">= 1.6.4"])
       s.add_development_dependency(%q<rcov>, [">= 0"])
       s.add_development_dependency(%q<autotest>, [">= 0"])
     else
-      s.add_dependency(%q<rspec>, ["~> 2.3.0"])
-      s.add_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
+      s.add_dependency(%q<rspec>, [">= 2.3.0"])
+      s.add_dependency(%q<bundler>, [">= 1.0.0"])
+      s.add_dependency(%q<jeweler>, [">= 1.6.4"])
       s.add_dependency(%q<rcov>, [">= 0"])
       s.add_dependency(%q<autotest>, [">= 0"])
     end
   else
-    s.add_dependency(%q<rspec>, ["~> 2.3.0"])
-    s.add_dependency(%q<bundler>, ["~> 1.0.0"])
-    s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
+    s.add_dependency(%q<rspec>, [">= 2.3.0"])
+    s.add_dependency(%q<bundler>, [">= 1.0.0"])
+    s.add_dependency(%q<jeweler>, [">= 1.6.4"])
     s.add_dependency(%q<rcov>, [">= 0"])
     s.add_dependency(%q<autotest>, [">= 0"])
   end
